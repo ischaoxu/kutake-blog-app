@@ -10,6 +10,4 @@
   <SvgIcon name="home"></SvgIcon>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

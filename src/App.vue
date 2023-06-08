@@ -11,16 +11,15 @@ const checked2 = ref(false)
     <el-container>
       <el-header>
         <div>
-    <el-checkbox v-model="checked1" label="Option 1" size="large" />
-    <el-checkbox v-model="checked2" label="Option 2" size="large" />
-  </div>
-  
+          <el-checkbox v-model="checked1" label="Option 1" size="large" />
+          <el-checkbox v-model="checked2" label="Option 2" size="large" />
+        </div>
       </el-header>
       <el-main>Main</el-main>
       <el-footer>12313131131313</el-footer>
     </el-container>
   </div>
-  <HelloWorld/>
+  <HelloWorld />
 </template>
 
 <style scoped>

@@ -1,21 +1,26 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+
+const checked1 = ref(true)
+const checked2 = ref(false)
 </script>
 
 <template>
-  <div>
-    <el-button type="primary">Primary</el-button>
-
-    <el-row class="mb-4">
-      <el-button plain>Plain</el-button>
-      <el-button type="primary" plain>Primary</el-button>
-      <el-button type="success" plain>Success</el-button>
-      <el-button type="info" plain>Info</el-button>
-      <el-button type="warning" plain>Warning</el-button>
-      <el-button type="danger" plain>Danger</el-button>
-    </el-row>
+  <div class="common-layout">
+    <el-container>
+      <el-header>
+        <div>
+    <el-checkbox v-model="checked1" label="Option 1" size="large" />
+    <el-checkbox v-model="checked2" label="Option 2" size="large" />
   </div>
-  <!-- <HelloWorld></HelloWorld> -->
+  
+      </el-header>
+      <el-main>Main</el-main>
+      <el-footer>12313131131313</el-footer>
+    </el-container>
+  </div>
+  <HelloWorld/>
 </template>
 
 <style scoped>
